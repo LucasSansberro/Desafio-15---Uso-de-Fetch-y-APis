@@ -1,0 +1,481 @@
+@charset "UTF-8";
+/* General/Global */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2DEBD;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none !important
+  color: black !important;
+}
+a:hover {
+  color: blue !important;
+}
+
+li {
+  padding: 5px;
+}
+
+.oscuro {
+  background-color: #4F7178;
+}
+
+.claro {
+  background-color: #E4AF8E;
+}
+
+.clarisimo {
+  background-color: #E2C18B;
+}
+
+.crema {
+  background-color: #F2DEBD;
+}
+
+/* Para modificar variables ir a _variables.scss */
+/* General/Global */
+/* Header */
+.header-nav {
+  border: 1px black solid;
+  background-color: #4F7178;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.home-nav {
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  max-height: 80px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3em;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.5em;
+  justify-content: flex-end;
+  margin: 0px;
+  font-weight: bold;
+}
+
+/* Media Query - Header */
+@media only screen and (max-width: 1200px) {
+  .header-nav {
+    align-items: start;
+    position: sticky;
+    top: 0px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .titulo {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+
+  .links ul {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .logo {
+    height: 80px;
+  }
+
+  .titulo {
+    font-size: 2em;
+  }
+
+  .navbar {
+    margin-top: 10px;
+  }
+
+  .links ul {
+    font-size: 1.25em;
+  }
+}
+/*Header*/
+/*Footer*/
+footer {
+  border: 1px black solid;
+  background-color: #E4AF8E;
+  overflow: hidden;
+}
+
+.titulo-footer {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 5px;
+  letter-spacing: 4px;
+}
+
+.redes ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.img-redes {
+  margin-right: 50px;
+  height: 30px;
+}
+
+/* Footer - Media Query */
+@media only screen and (max-width: 1200px) {
+  .titulo-footer {
+    font-size: 0.85em;
+  }
+
+  .redes ul {
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+
+  .img-redes {
+    margin-right: 0px;
+    height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo-footer {
+    font-size: 1.5em;
+  }
+
+  .img-redes {
+    margin: 0 10px;
+    height: 30px;
+  }
+}
+
+/* Footer */
+
+/*reparacion.html y maquetado.html*/
+
+.reparacion-maquetado {
+  background-color: #F2DEBD;
+  font-weight: bold;
+}
+
+.titulo-reparacion-maquetado {
+  margin-top: 25px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.subtitulo-reparacion-maquetado {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.lista-reparacion-maquetado {
+  font-size: 1.5em;
+  list-style: none;
+}
+
+.li-calidad:before {
+  content: url(img/calidad.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-calidad {
+  margin-top: 10px;
+}
+
+.li-garantia:before {
+  content: url(img/garantia.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-garantia {
+  margin-top: 10px;
+}
+
+.li-precio:before {
+  content: url(img/precio.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.li-precio {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.li-libro:before {
+  content: url(img/libro.png);
+  vertical-align: middle;
+}
+
+.li-libro {
+  margin-top: 10px;
+}
+
+.ofertas-titulo {
+  text-align: center;
+  font-size: 1.75em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Asset de internet / cssbuttons.io by @martinval9 */
+.card {
+  box-shadow: 4px 6px 14px #2F2F42;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.contenedor-ofertas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.caja-oferta {
+  padding: 25px;
+  width: 450px;
+  border: 1px black solid;
+  font-size: 1.25em;
+}
+
+.caja-oferta li {
+  padding: 8px;
+}
+
+.img-oferta {
+  height: 300px;
+}
+
+/* Elementos de JavaScript */
+
+.botonDeScript {
+	background: none;
+	border: none;
+	font: inherit;
+}
+
+.cuadroScripts {
+	margin-top: 50px;
+  	padding: 20px;
+  	background-color: #E4AF8E;
+  	overflow: hidden;
+  	width: 50%;
+}
+
+.cuadroCarrito {
+	border: 1px solid black;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+.listaCarrito {
+	list-style: none;
+	font-size: 1.25em;
+	padding: 0px;
+	margin-top: 20px;
+}
+
+.divBotonesScript { 
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly; 
+}
+
+.botonesDiv{
+	margin-top: 10px
+}
+
+.botonEliminar{
+	font: inherit;
+}
+
+.estiloTextoPrecio {
+	height: 34px;
+	padding-top: 5px
+}
+
+.botonDeEnvio {
+	height: 34px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.animacion-botonDeEnvio {
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.texto-botonDeEnvio {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.textoListaCarrito{
+	display: inline
+}
+
+.botonEliminador {
+	width: 50px;
+	font-size: 20px;
+	font: inherit
+}
+
+.animacion-botonDeEnvio:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+.inputSweetAlert {
+  letter-spacing: 0.15em;
+  font-weight: bold;
+}
+
+@media (hover: none) {
+  .fa-paper-plane {
+    display: none;
+  }}
+
+/*Elementos JS - Fin */
+
+.ofertas-fin {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+/*reparacion.html y maquetado.html - Media Query */
+@media only screen and (max-width: 1200px) {
+  .titulo-reparacion-maquetado {
+    font-size: 2em;
+  }
+
+  .subtitulo-reparacion-maquetado {
+    font-size: 1.25em;
+    margin-right: 10px;
+  }
+
+  .lista-reparacion-maquetado {
+    font-size: 0.85em;
+  }
+
+  .ofertas-titulo {
+    font-size: 1.25em;
+  }
+
+  .contenedor-ofertas {
+    flex-direction: column;
+  }
+
+  .caja-oferta {
+    width: 95%;
+    font-size: 1em;
+    margin-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .caja-oferta ul {
+    padding-left: 15px;
+  }
+
+  .img-oferta {
+    height: 200px;
+  }
+
+  .cuadroScripts{
+ 	width:95%
+  } 
+  .cuadroCarrito {
+ 	min-height: 275px
+  }
+	
+  .listaCarrito{
+	font-size: 0.85em;
+	margin-top: 10px;
+  }
+
+  .ofertas-fin {
+    text-align: center;
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+ 
+  .titulo-reparacion-maquetado {
+    font-size: 2.5em;
+  }
+
+  .subtitulo-reparacion-maquetado {
+    font-size: 1.5em;
+  }
+
+  .lista-reparacion-maquetado {
+    font-size: 1.5em;
+  }
+
+  .ofertas-titulo {
+    font-size: 2em;
+  }
+
+  .caja-oferta {
+    width: 75%;
+    font-size: 1.5em;
+  }
+
+  .card-title {
+    font-size: 1.5em;
+  }
+
+  .img-oferta {
+    height: 300px;
+  }
+
+  .ofertas-fin {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .cuadroScripts {
+  	width: 65%
+  }
+
+  .textoListaCarrito{font-size: 1.5em;}
+}
+
+/*reparacion.html y maquetado.html*/

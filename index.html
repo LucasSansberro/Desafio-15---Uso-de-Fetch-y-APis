@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Book Binders | Reparación</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/87244d6ce6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+
+	<header class="header-nav"> 
+		<img class="logo" src="img/logo-book-binders.png" alt="Logotipo Book Binders">	
+		<p class="titulo"> Book Binders </p>
+		<nav class="navbar navbar-expand-lg navbar-light">
+  			<div class="container-fluid justify-content-end">
+    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    			<div class="collapse navbar-collapse justify-content-end links" id="navbarNav">
+      				<ul class="navbar-nav text-end">
+        				<li class="nav-item">Home</li>
+        				<li class="nav-item">Reparación</li>
+        				<li class="nav-item">Maquetado</li>
+        				<li class="nav-item">Galería</li>
+        				<li class="nav-item">Contacto</li>
+      				</ul>
+    			</div>
+  			</div>
+		</nav>
+	</header>
+
+	<section class="reparacion-maquetado">
+		<h1 class="titulo-reparacion-maquetado text-center">Reparación</h1>
+		<h2 class="subtitulo-reparacion-maquetado text-center">¿Por qué elegir Book Binders para reparar sus libros?</h2>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<ul class="lista-reparacion-maquetado col-lg-5 col-md-9">
+					<li class="li-calidad">Materiales de primera calidad</li>
+					<li class="li-garantia">Garantía asegurada por dos años</li>
+					<li class="li-libro">Conservamos el material original</li>
+					<li class="li-precio">Precios accesibles</li>
+				</ul>
+			</div>
+		</div>
+
+		<h3 class="ofertas-titulo">Algunas de nuestras ofertas:</h3>
+		<div class="contenedor-ofertas">
+			<div class="card caja-oferta clarisimo"> 
+  				<img class="card-img-top img-oferta" src="img/reparacion-paperback.jpg" alt="Libro de tapa blanda siendo reparado">
+  				<div class="card-body">
+    				<h5 class="card-title">En rústica</h5>
+  				</div>
+  				<ul id="ulRustica"class="list-group list-group-flush"> 
+  					<!-- Entra li por JS -->
+  				</ul>
+			</div>
+			<div class="card caja-oferta clarisimo"> 
+  				<img class="card-img-top img-oferta" src="img/reparacion-cartone.jpg" alt="Libro con lomo de tela siendo limpiado">
+  				<div class="card-body">
+    				<h5 class="card-title">En cartoné</h5>
+  				</div>
+  				<ul id="ulCartone" class="list-group list-group-flush"> 
+  					<!-- Entra li por JS -->
+  				</ul>
+			</div>
+			<div class="card caja-oferta clarisimo"> 
+  				<img class="card-img-top img-oferta" src="img/reparacion-cuero.png" alt="Libro cosido en cuero siendo reparado">
+  				<div class="card-body">
+    			<h5 class="card-title">Cosido en cuero</h5>
+  				</div>
+  				<ul id="ulCuero" class="list-group list-group-flush"> 
+    				<!-- Entra li por JS -->
+  				</ul>
+			</div>
+		</div>
+
+		<h3 class="ofertas-titulo">¿Querés hacer una compra express?</h3>
+		<h4 class="ofertas-titulo">Simplemente presiona sobre el item que quieras para agregarlo al carrito</h4>
+		<div class="container cuadroScripts">
+  			<div class="row justify-content-between">
+  				<div class="col-lg-8 col-xl-8 cuadroCarrito">
+  					<ul id="listaCarrito" class=" listaCarrito">
+  						<!-- Entra li por JS -->
+  					</ul>
+  				</div>
+  				<div class="col-lg-4 col-xl-4 botonesDiv divBotonesScript justify-content-around">
+  					<p id="textoPrecioFinal" class="text-center botonesDiv crema estiloTextoPrecio">Precio final: $0</p>
+  					<button class="btn botonesDiv crema col-12 botonEliminar" id="botonVaciador">
+  						<span>Vaciar carrito</span>
+  					</button>
+  					<button class="btn botonesDiv crema col-12 botonEliminar" id="botonOrdenador">
+  						<span>Ordenar por precio de menor a mayor</span>
+  					</button>
+    				<form id="contact-form" role="form">
+      					<button class="btn botonesDiv crema botonDeEnvio col-12" id="botonDeEnvio" type="submit" value="SEND">
+        					<div class="animacion-botonDeEnvio">
+          						<i class="fa fa-paper-plane"></i><span class="texto-botonDeEnvio">Enviar</span>
+        					</div>
+      					</button>
+    				</form>
+    			</div>
+    		</div>
+		</div>
+
+		<p class="ofertas-fin">Consultá con nosotros para conocer otras opciones.</p>
+	</section>
+
+	<footer class="footer-home container-fluid">
+		<div class="text-center titulo-footer">
+			<p>¡No te olvides de seguirnos!</p>
+		</div>
+		<div class="redes">
+			<ul>
+				<li><a class="link-contacto" href="https://twitter.com/home" target="_blank"><img class="img-redes" src="img/icono-twitter.png" alt="Ícono Twitter"></a></li>
+				<li><a class="link-contacto" href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="img-redes" src="img/icono-whatsapp.png"alt="Ícono WhatsApp"></a></li>
+				<li><a class="link-contacto" href="https://www.tiktok.com/es/" target="_blank"><img class="img-redes" src="img/icono-tiktok.png" alt="Ícono TikTok"></a></li>
+				<li><a class="link-contacto" href="https://instagram.com" target="_blank"><img class="img-redes" src="img/icono-instagram.png" alt="Ícono Instagram"></a></li>
+				<li><a class="link-contacto" href="https://facebook.com" target="_blank"><img class="img-redes" src="img/icono-facebook.png" alt="Ícono Facebook"></a></li>
+				<li><a class="link-contacto" href="https://www.linkedin.com/feed/" target="_blank"><img class="img-redes" src="img/icono-linkedin.png" alt="Ícono LinkedIn"></a></li>
+			</ul>	
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>

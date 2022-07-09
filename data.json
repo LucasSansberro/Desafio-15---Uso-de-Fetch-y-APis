@@ -1,0 +1,15 @@
+//El JSON hosteado en https://jsonbin.io
+[
+	{ "id":1, "nombre": "Restauración de portada: $","precio": 600, "categoria": "Rústica" },
+	{ "id":2, "nombre": "Encolado de lomo: $","precio": 1200, "categoria": "Rústica" },
+	{ "id":3, "nombre": "Limpieza: $","precio": 300,  "categoria": "Rústica" },
+	{ "id":4, "nombre": "Pegado de páginas: $","precio": 2000, "categoria": "Rústica" },
+	{ "id":5, "nombre": "Restauración de portada: $","precio": 2000, "categoria": "Cartoné" },
+	{ "id":6, "nombre": "Encolado de lomo: $","precio": 5000, "categoria": "Cartoné" },
+	{ "id":7, "nombre": "Limpieza: $", "precio": 1500,  "categoria": "Cartoné" },
+	{ "id":8, "nombre": "Pegado de páginas: $","precio": 7000, "categoria": "Cartoné" },
+	{ "id":9, "nombre": "Restauración de portada: $","precio": 15000, "categoria": "Cuero" },
+	{ "id":10, "nombre": "Reemplazo de tarlatana: $","precio": 10000, "categoria": "Cuero" },
+	{ "id":11, "nombre": "Limpieza: $","precio": 8000, "categoria": "Cuero" },
+	{ "id":12, "nombre": "Restauración de páginas: $","precio": 9000, "categoria": "Cuero" }
+]
